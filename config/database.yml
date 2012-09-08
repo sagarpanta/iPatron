@@ -1,0 +1,35 @@
+
+
+development:
+    adapter: sqlserver
+    mode: dblib
+    dataserver: tshv0dv06   # Name from freetds.conf, host or instance 'localhost\SQLEXPRESS'
+    host: mydb.net          # Used if dataserver is blank.
+    port: 1433              # Used if host present. Default is 1433.
+    database: mobileCRM
+    username: sa
+    password: P@ssw0rd
+    timeout: 5000
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test: &test
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+
+production:
+    adapter: sqlserver
+    mode: dblib
+    dataserver: tshv0dv06   # Name from freetds.conf, host or instance 'localhost\SQLEXPRESS'
+    host: mydb.net          # Used if dataserver is blank.
+    port: 1433              # Used if host present. Default is 1433.
+    database: mobileCRM
+    username: sa
+    password: P@ssw0rd
+    timeout: 5000
+
+cucumber:
+  <<: *test

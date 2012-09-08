@@ -1,0 +1,137 @@
+
+<div data-role="page" id="notifications_page">
+
+
+
+
+	<div data-role="header"  data-tap-toggle="false" data-position="fixed">
+		<%= image_tag '/assets/header.jpg', width:'100%' %>
+		<div class="ui-bar">
+			
+			<h3 class="alignleft">Notifications</h3>
+			<div class = "alignright" id='notification_notification'>
+				<%= link_to (image_tag '/assets/redlight.png', :width=>'35px', :height=>'31px') , notifications_path  %>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		
+	</div>
+
+
+
+
+
+<div data-role="content" id="notifications_content">
+	
+	<% if signed_in? %>
+		<%= render '/notifications/realtimenotification' %>
+		<table>
+		<% @notifications.each do |notification| %>
+				<% notification.set_bulb_to_zero %>
+				<% if notification.read == 0 %>
+							<% if notification.notification == 'offers' %>
+								 <tr class="notification_list_unread">
+									<td class="spacer"><%= image_tag '/assets/spacer.png' %></td><td class="image"><%= image_tag '/assets/spacer.png' %><br/><%= image_tag  notification.code+'o.png' , :width =>'60px' , :height=> '60px' %></td>
+									<td>
+										<h3>Offer:&nbsp;<%= notification.description %></h3>
+										<p>Start Date: <%= notification.startdate.strftime("%b %d, %Y") %></p>
+										<p>End Date: <%= notification.endate.strftime("%b %d, %Y") %></p>
+									</td>
+									
+									<td class="mark_as_read">
+										<%= image_tag '/assets/unread1.png' , :class=> "unread" %>
+										<p class="read" style="display:none">/notifications/<%= notification.id   %></p>
+									</td>
+								</tr>
+							<% elsif notification.notification == 'events' %>
+								 <tr  class="notification_list_unread" >
+									<td class="spacer"><%= image_tag '/assets/spacer.png' %></td><td class="image"><%= image_tag '/assets/spacer.png' %><br/><%= image_tag '/assets/'+notification.code+'e.png' , :width =>'60px' , :height=> '60px' %></td>
+									<td>
+										<h3>Event:&nbsp;<%= notification.description %></h3>
+										<p>Start Date: <%= notification.startdate.strftime("%b %d, %Y") %></p>
+										<p>End Date: <%= notification.endate.strftime("%b %d, %Y") %></p>
+									</td>
+									
+									<td class="mark_as_read">
+										<%= image_tag '/assets/unread1.png' , :class=> "unread" %>
+										<p class="read" style="display:none">/notifications/<%= notification.id   %></p>
+									</td>
+								</tr>
+							<% elsif notification.notification == 'promotions' %>
+								<tr class="notification_list_unread">
+									<td class="spacer"><%= image_tag '/assets/spacer.png' %></td><td class="image"><%= image_tag '/assets/default_promotion.png' , :width =>'60px' , :height=> '60px' %></td>
+									<td>
+										<h3>Promotion:&nbsp;<%= notification.description %></h3>
+										<p>Entries: <%= notification.num_of_entries %></p>
+										<p>Start Date: <%= notification.startdate.strftime("%b %d, %Y") %>&nbsp;&nbsp;&nbsp;End Date: <%= notification.endate.strftime("%b %d, %Y") %></p>
+										<p>Drawing: <%= notification.drawingtime.strftime("%b %d, %Y %I:%M%p") %></p></td>
+									<td class="mark_as_read">
+										<%= image_tag '/assets/unread1.png' , :class=> "unread" %>
+										<p class="read" style="display:none">/notifications/<%= notification.id   %></p>
+									</td>
+									
+								</tr>
+							<% end %>
+				<% else %>
+						
+							<% if notification.notification == 'offers' %>
+								 <tr class="notification_list">
+									<td class="spacer"><%= image_tag '/assets/spacer.png' %></td><td class="image"><%= image_tag '/assets/spacer.png' %><br/><%= image_tag  notification.code+'o.png' , :width =>'60px' , :height=> '60px' %></td>
+									<td>
+										<h3>Offer:&nbsp;<%= notification.description %></h3>
+										<p>Start Date: <%= notification.startdate.strftime("%b %d, %Y") %></p>
+										<p>End Date: <%= notification.endate.strftime("%b %d, %Y") %></p>
+									</td>
+									<td class="mark_as_read"></td>
+								</tr>
+							<% elsif notification.notification == 'events' %>
+								 <tr  class="notification_list" >
+									
+									<td class="spacer"><%= image_tag '/assets/spacer.png' %></td><td class="image"><%= image_tag '/assets/spacer.png' %><br/><%= image_tag '/assets/'+notification.code+'e.png' , :width =>'60px' , :height=> '60px' %></td>
+									<td>
+										<h3>Event:&nbsp;<%= notification.description %></h3>
+										<p>Start Date: <%= notification.startdate.strftime("%b %d, %Y") %></p>
+										<p>End Date: <%= notification.endate.strftime("%b %d, %Y") %></p>
+									</td>
+									<td class="mark_as_read"></td>
+									
+									
+								</tr>
+							<% elsif notification.notification == 'promotions' %>
+								<tr class="notification_list">
+									<td class="spacer"><%= image_tag '/assets/spacer.png' %></td><td class="image"><%= image_tag '/assets/default_promotion.png' , :width =>'60px' , :height=> '60px' %></td>
+									<td>
+										<h3>Promotion:&nbsp;<%= notification.description %></h3>
+										<p>Entries: <%= notification.num_of_entries %></p>
+										<p>Start Date: <%= notification.startdate.strftime("%b %d, %Y") %>&nbsp;&nbsp;&nbsp;End Date: <%= notification.endate.strftime("%b %d, %Y") %></p>
+										<p>Drawing: <%= notification.drawingtime.strftime("%b %d, %Y %I:%M%p") %></p>
+									</td>
+									<td class="mark_as_read"></td>
+								</tr>
+							<% end %>
+
+				<% end %>
+
+
+		<% end %>
+		</table>
+	<% end %>
+
+
+</div>
+
+
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" >
+			<ul>
+				<li class='fhome'><%= link_to image_tag('/assets/home.jpg', :class=> 'footer_img', :width=> '100%'), player_home_path %></li>
+				<li class='foffer'><%= link_to image_tag('/assets/offers.jpg', :class=> 'footer_img',:width=> '100%'), offers_path %></li>
+				<li class='fevent'><%= link_to image_tag('/assets/events.jpg',:class=> 'footer_img', :width=> '100%'), events_path %></li>
+				<li class='fpromo'><%= link_to image_tag('/assets/promo.jpg',:class=> 'footer_img', :width=> '100%'), promotions_path %></li>
+				<li class='fnews'><%= link_to image_tag('/assets/news.jpg', :class=> 'footer_img',:width=> '100%'), announcements_path %></li>
+			</ul>
+	</div>
+
+	
+</div>
+
+

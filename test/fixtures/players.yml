@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  playerid: MyString
+  clublevel: MyString
+  address: MyString
+  contact: MyString
+  encrypted_password: MyString
+  encrypted_password_confirmation: MyString
+  ptsBal: 
+  ptsRed: 
+
+two:
+  name: MyString
+  playerid: MyString
+  clublevel: MyString
+  address: MyString
+  contact: MyString
+  encrypted_password: MyString
+  encrypted_password_confirmation: MyString
+  ptsBal: 
+  ptsRed: 

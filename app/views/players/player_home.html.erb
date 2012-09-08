@@ -1,0 +1,44 @@
+
+
+<div data-role="page" id="home_page">
+
+
+
+<div data-role="header" >
+	<%= image_tag '/assets/TechResultsCasinoBanner.png' , width:'100%' %>
+</div>
+
+
+
+	<div data-role="content">
+	
+	
+		  <p style="text-align: center; font-size:20px;">Welcome <%= current_player.name %>!</p>
+		  <div id="img"><%= image_tag '/assets/Gold.png' , :width=> 200 %></div>
+			<% if signed_in? %>
+				<table id="balance">
+					<tr  id='_bal'><td>Balances</td></tr>
+					<tr><td>Points Redeemed :</td><td><%= number_with_delimiter(@player.ptsRed, :delimiter => ',') %></td></tr>
+					<tr><td>Points Balance  :</td><td><%= number_with_delimiter(@player.ptsBal, :delimiter => ',') %></td></tr>
+				</table>
+
+			<% else %>
+				You are not signed in<br/>
+				<% link_to signin_path %>
+			<% end %>
+			
+
+	</div>
+	
+	<div data-role="footer" data-position="fixed" >
+		<div data-role="navbar" >
+			<ul>
+				<li><%= link_to '' , player_home_path, 'data-icon' => 'home' %></li>
+				<li><div id="promotion1"></div><%= link_to '', player_home_path, 'data-icon' => 'promotion' %></li>
+				<li><div id="event1"></div><%= link_to '' , player_home_path, 'data-icon' => 'event' %></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+
+
+</div>

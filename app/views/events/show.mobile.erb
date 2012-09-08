@@ -1,0 +1,11 @@
+<div id="remote_show_event_page">
+
+<% @event.mark_as_read %>
+<% Notification.where('playerid = ? and notificationid=? and notification=?' , current_player.playerid, @event.id, 'events').each do |n| %>
+	<% n.set_bulb_to_zero %>
+<% end %>
+
+<% Notification.mark_as_read(current_player.playerid, @event.id, 'events') %>
+
+
+</div>

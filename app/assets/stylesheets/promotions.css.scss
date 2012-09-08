@@ -1,0 +1,87 @@
+// Place all the styles related to the Promotions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#promotion_page {background: url(/assets/bg.jpg) no-repeat;
+background-size: 100% 100%;
+color: white;
+text-shadow: none;
+}
+
+
+
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+
+h3{
+font-family: "Verdana";
+}
+
+.ui-li-heading{
+font-family: "Verdana";
+	font-size:12px
+}
+
+
+.ui-li-desc{
+	font-family: "Verdana";
+	font-size:10px
+}
+
+
+
+#show_promotion{
+display: block;
+margin-left: auto;
+margin-right:auto;
+min-width: 200px;
+height: 150px;
+background: #305997;
+border:2px solid;
+border-radius:25px;
+
+}
+
+#promotion_img{
+	text-align: center;
+	vertical-align:middle;
+	
+}
+
+table{
+width:100%;
+}
+
+.promotion_list {
+display: block;
+margin-left: auto;
+margin-right:auto;
+background: rgba(243, 243, 243, 0.9);
+width:100%;
+color:#444;
+font-family: "Verdana";
+font-size: 9px;
+border:2px solid;
+border-radius:25px;
+}
+
+
+.promotion_list_unread {
+display: block;
+margin-left: auto;
+background: rgba(255, 233, 133, 0.9);
+width:100%;
+color:#444;
+font-family: "Verdana";
+font-size: 9px;
+border:2px solid;
+border-radius:25px;
+}
+
+

@@ -1,0 +1,44 @@
+
+<div data-role="page" id="notifications_page">
+
+<div data-role="header">
+	<%= image_tag '/assets/TechResultsCasinoBanner.png' , width:'100%' %>
+</div>
+
+
+<div class="ui-bar ui-bar-b">
+	<h3 class="alignleft">News</h3>
+	<div class = "alignright" id='news_notification'><%= link_to (image_tag ('/assets/dark.png')) , notifications_path  %></div>
+	<div style="clear: both;"></div>
+</div>
+
+<div data-role="content">
+
+		<%= render '/news/realtimenews' %>
+		<ul data-role="listview" data-theme="d">
+		<% @news.each do |n| %>
+				<li><%=  n.description %></li>
+		<% end %>
+		</ul>
+
+
+
+</div>
+
+
+<div data-role="footer" data-position="fixed" >
+		<div data-role="navbar" >
+			<ul>
+				<li><%= link_to '' , player_home_path, 'data-icon' => 'playershome' %></li>
+				<li id="offer1"><%= link_to '', offers_path, 'data-icon' => 'offer' %></li>
+				<li id="event1"><%= link_to '' , events_path, 'data-icon' => 'event' %></li>
+				<li id="promotion1"><%= link_to '', promotions_path, 'data-icon' => 'promotion' %></li>
+				<li id="news1"><%= link_to '', news_path, 'data-icon' => 'news' %></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+
+	
+</div>
+
+

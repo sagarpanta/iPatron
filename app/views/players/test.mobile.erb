@@ -1,0 +1,11 @@
+<%= @password %>
+
+<% if Player.where('playerid=?', '101')[0].encrypted_password == @password %>
+
+<p><%= Player.where('playerid=?', '101')[0].encrypted_password %></p>
+<p>password equal</p>
+<%else%>
+
+<p>'<%= Player.where('playerid=?', '101')[0].encrypted_password %>'</p>
+<p>password unequal</p>
+<%end%>

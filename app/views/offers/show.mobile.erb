@@ -1,0 +1,6 @@
+<%= @offer.mark_as_read %>
+<% Notification.where('playerid = ? and notificationid=? and notification=?' , current_player.playerid, @offer.id, 'offers').each do |n| %>
+	<% n.set_bulb_to_zero %>
+<% end %>
+
+<% Notification.mark_as_read(current_player.playerid, @offer.id, 'offers') %>

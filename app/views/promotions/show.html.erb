@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Code:</b>
+  <%= @promotion.code %>
+</p>
+
+<p>
+  <b>Playerid:</b>
+  <%= @promotion.playerid %>
+</p>
+
+<p>
+  <b>Startdate:</b>
+  <%= @promotion.startdate %>
+</p>
+
+<p>
+  <b>Endate:</b>
+  <%= @promotion.endate %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @promotion.description %>
+</p>
+
+<p>
+  <b>Drawingtime:</b>
+  <%= @promotion.drawingtime %>
+</p>
+
+<p>
+  <b>Num of entries:</b>
+  <%= @promotion.num_of_entries %>
+</p>
+
+<p>
+  <b>Read:</b>
+  <%= @promotion.read %>
+</p>
+
+
+<%= link_to 'Edit', edit_promotion_path(@promotion) %> |
+<%= link_to 'Back', promotions_path %>

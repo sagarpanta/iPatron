@@ -1,0 +1,82 @@
+
+<div data-role="page" id="show_notificationoffer_page">
+
+
+
+<div data-role="header" >
+	<%= image_tag '/assets/TechResultsCasinoBanner.png' , width:'100%' %>
+</div>
+
+<div class="ui-bar ui-bar-b">
+	<h3 class="alignleft"><%= @notification.notification[0..-2].capitalize %>:&nbsp&nbsp&nbsp<%=  @notification.description %></h3>
+	<div class = "alignright" id='show_offer_notification'>
+		<% @notification.set_bulb_to_zero %>
+		<% if Notification.where('playerid=?' ,current_player.playerid ).sum('bulb') == 0 %>
+			<%= link_to (image_tag ('/assets/dark.png')) , notifications_path  %>
+		<% else %>
+			<%= link_to (image_tag ('/assets/light.png')) , notifications_path  %>
+		<% end %>
+	</div>	
+	
+	<div style="clear: both;"></div>
+</div>
+
+
+<div data-role="content">
+			<div id="show_notification">
+				<% @notification.mark_as_read %>
+
+				<% if @notification.notification == 'offers' %>
+					<% Offer.mark_as_read(@notification.notificationid) %>
+					<div id='notification_img' style="line-height:200px;"><%= image_tag '/assets/'+@notification.code+'o.png' , :width =>'90%' , :height=> '50%' %></div>
+				<% elsif @notification.notification == 'events' %>
+					<% Event.mark_as_read(@notification.notificationid) %>
+					<table>
+						<tr  class="notification_event_list" data-time="<%=  @notification.created_at  %>">
+							<td><%= image_tag '/assets/'+@notification.code+'e.png' , :width =>'70px' , :height=> '70px' %></td>
+							<td>
+								<h3><%= @notification.description %></h3>
+								<p>Start Date: <%= @notification.startdate %></p>
+								<p>End Date: <%= @notification.endate %></p>
+							</td>	
+
+							
+						</tr>
+					</table>
+				<% elsif @notification.notification == 'promotions' %>
+					<% Promotion.mark_as_read(@notification.notificationid) %>
+					<table>
+						<tr class="notification_promotion_list">
+							<td class="image"><%= image_tag '/assets/default_promotion.png' , :width =>'70px' , :height=> '70px' %></td>
+							<td>
+								<h3><%= @notification.description %></h3>
+								<p>Entries: <%= @notification.num_of_entries %></p>
+								<p>Start Date: <%= @notification.startdate.strftime('%Y-%m-%d') %>&nbsp;&nbsp;&nbsp;End Date: <%= @notification.endate.strftime('%Y-%m-%d') %></p>
+								<p>Drawing: <%= @notification.drawingtime %></p>
+							</td>
+						</tr>
+					</table>
+				<% end %>
+			</div>
+
+			
+			
+			
+			
+</div>
+
+	
+	<div data-role="footer" data-position="fixed" >
+		<div data-role="navbar" >
+			<ul>
+				<li class="home1"><%= link_to '' , player_home_path, 'data-icon' => 'playershome' %></li>
+				<li class="offer1"><%= link_to '', offers_path, 'data-icon' => 'offer' %></li>
+				<li class="event1"><%= link_to '' , events_path, 'data-icon' => 'event' %></li>
+				<li class="promotion1"><%= link_to '', promotions_path, 'data-icon' => 'promotion' %></li>
+				<li class="news1"><%= link_to '', announcements_path, 'data-icon' => 'news' %></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+
+	
+</div>

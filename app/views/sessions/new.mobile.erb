@@ -1,0 +1,32 @@
+<div data-role="page" id="signin_page">
+
+<div data-role="header">
+	<%= image_tag '/assets/header.jpg' , width:'100%' %>
+</div>
+
+
+<div data-role="content">
+<%= form_for(:session, :url => sessions_path) do |f| %>
+  <div class="field">
+    <%= f.label :playerid, "PLayer ID" %>
+    <%= f.text_field :playerid  %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions" id="submit">
+    <%= f.submit "Sign In" %>
+  </div>
+<% end %>
+
+
+</div>
+
+
+
+<div id="signin_notification" style="display:none"><%= image_tag '/assets/dark.png' %></div>
+<div id="store_img_pos" style="display:none"></div>
+<div id="bulb_count" style="display:none">0</div>
+
+</div>

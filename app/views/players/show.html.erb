@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @player.name %>
+</p>
+
+<p>
+  <b>Playerid:</b>
+  <%= @player.playerid %>
+</p>
+
+<p>
+  <b>Clublevel:</b>
+  <%= @player.clublevel %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @player.address %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @player.contact %>
+</p>
+
+<p>
+  <b>Encrypted password:</b>
+  <%= @player.encrypted_password %>
+</p>
+
+<p>
+  <b>Encrypted password confirmation:</b>
+  <%= @player.encrypted_password_confirmation %>
+</p>
+
+<p>
+  <b>Ptsbal:</b>
+  <%= @player.ptsBal %>
+</p>
+
+<p>
+  <b>Ptsred:</b>
+  <%= @player.ptsRed %>
+</p>
+
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>

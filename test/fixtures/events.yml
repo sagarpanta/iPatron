@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  code: MyString
+  description: MyString
+  startdate: 2012-06-25 12:37:04
+  enddate: 2012-06-25 12:37:04
+  playerid: MyString
+  read: 1
+
+two:
+  code: MyString
+  description: MyString
+  startdate: 2012-06-25 12:37:04
+  enddate: 2012-06-25 12:37:04
+  playerid: MyString
+  read: 1

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="apple-touch-icon" href="/assets/techresults.png" />
+  <title>TR Casino</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scaleable=no">
+
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery.mobile.min" %>
+  <%= stylesheet_link_tag    "jquery.mobile.min.css"  %>
+  <%= stylesheet_link_tag    "players", "sessions" , "offers" , "notifications" ,"events", "announcements" , "promotions" %>
+  <%= csrf_meta_tags %>
+  
+
+</head>
+<body>
+
+
+
+<script>
+
+	//click event on notification bulb
+
+	$('#home_notification').live('click' , function() {
+		$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+	});
+		
+	$('#offer_notification').live('click' , function() {
+		$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+	});
+	
+	$('#event_notification').live('click' , function() {
+		$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+		
+	});	
+	
+	$('#promotion_notification').live('click' , function() {
+		$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+	});
+
+	$('#notification_notification').live('click' , function() {
+		$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+		$('#notification_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+	});
+	
+	$('#show_offer_notification').live('click' , function() {
+		$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+
+
+	});
+	
+	$('#show_event_notification').live('click' , function() {
+		$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+
+
+	});
+	
+	$('#show_promotion_notification').live('click' , function() {
+		$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+		$('#show_promotion_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+
+	});
+	
+	$('#announcement_notification').live('click' , function() {
+		$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+		$('#announcement_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+
+	});
+	
+	
+	//click event on notification itself turns off the notification bulb
+	
+	$('#prepend_notification').live('click' , function() {
+		
+		$('#show_notification_page').live('pageinit',function(event){
+			$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+			$('#show_notification_page').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+		});
+		
+		
+	
+	});
+	
+	
+	$('#notification_list').live('click' , function() {
+		
+		$('#show_notification_page').live('pageinit',function(event){
+			$('#signin_notification').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+			$('#show_notification_page').html('<img alt="dark" height="31px" src="/assets/redlight.png" width="35px" />');
+		});
+	
+	});
+	
+
+	
+</script>	
+	
+
+
+	<%= yield %>
+
+</body>
+</html>
+
+
+
+
+<body>

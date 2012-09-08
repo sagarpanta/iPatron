@@ -1,0 +1,1106 @@
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (66.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (30.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Fri, 24 Aug 2012 23:57:00 UTC +00:00], ["encrypted_password", "5914eb435ad08c583c3d14b4c1750c8b09fad1b571c94b8b9f6acc082c1d6de0"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "2948fc5e7463ed4060e33ccc53ef74fdab9c98e2ad76cd66a7186b0d4461bb83"], ["updated_at", Fri, 24 Aug 2012 23:57:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:20:18 UTC +00:00], ["encrypted_password", "392becd8d44c3a4638d66db4be436bbdaa1fc81003837c0f3c47beef3598ebc4"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "e301b7e1f32002ddfc8d9f81d66c0c32a7d4397e99e367d5ab2ae8b6ed593a06"], ["updated_at", Sat, 25 Aug 2012 00:20:18 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:20:19 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (143.0ms)
+Completed 200 OK in 322ms (Views: 321.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:22:28 UTC +00:00], ["encrypted_password", "2589c5240a0cb21b75ebba5535423f46065097505a8016d71d02fb9b8677404d"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "2d8a97751b7542bf8219b976ee637d3a136068cc8a940d5ad12bbe65e3d670f6"], ["updated_at", Sat, 25 Aug 2012 00:22:28 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:22:28 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (82.0ms)
+Completed 200 OK in 236ms (Views: 236.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:24:22 UTC +00:00], ["encrypted_password", "2ef729b5544e0120f67336589f458ba60879ca4e87673f5dead5fc6d7a7fe69a"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "52bac8751543ca72e29ca26df0de2de8b75ba1d5903c20804c57e867a46b6b08"], ["updated_at", Sat, 25 Aug 2012 00:24:22 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:24:23 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 202ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (13.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:25:30 UTC +00:00], ["encrypted_password", "370605753a4c6625fdc9d1d81b4fd072916c1fb9b30b80251abd82516213efcb"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "29b38271eb4345becab183588905b4d1cc300cead70a536e1369b681c7f864b5"], ["updated_at", Sat, 25 Aug 2012 00:25:30 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:25:30 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 198ms (Views: 197.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:26:33 UTC +00:00], ["encrypted_password", "83f8e74768eb13d349ebfbb734bb976ae11b2d6aedf170d4325501d154d14f81"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "45e48b4983346c304b396774222b8b9bb002de976ab2b7f9d85e8c9bc571d21f"], ["updated_at", Sat, 25 Aug 2012 00:26:33 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:26:33 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 204ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 19:26:34 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:30:58 UTC +00:00], ["encrypted_password", "fc6f1fc5d1cc70f8c8ade4175cc38887542b2a823365f2f8fd01454b2e343a21"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "9e2d6b87dc5cb13e94f5b1f57a497165d8f93a3c5b5ac49928d5d4746919f1c4"], ["updated_at", Sat, 25 Aug 2012 00:30:58 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:30:59 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 191ms (Views: 191.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (13.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:33:33 UTC +00:00], ["encrypted_password", "3385e0c67a64e95b47927997691ebc37ade488bcde7d2fd9009132022cb10e1c"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "1bf5ba5b52a7b1cd4a015e683a3d4061ae070b3d56c54e1682667d4e6023c91a"], ["updated_at", Sat, 25 Aug 2012 00:33:33 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:33:34 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 204ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:36:31 UTC +00:00], ["encrypted_password", "a48da65a5caedcdb4737f35014c54e00d3247b4e1af51d2e876ab6ad451de718"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "29f36e904f99314e6602460635818b55f5b98e3f0d6d729ae5062a527ad00d8c"], ["updated_at", Sat, 25 Aug 2012 00:36:31 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:36:32 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 203ms (Views: 202.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 19:36:32 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (45.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:38:30 UTC +00:00], ["encrypted_password", "bd71500bfa79182daaebd091987ad5891befd3ef8c4b76e695aebf233e2e6682"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "a507bc0c076e6094ce244a24a9ad419db7632ecd349374a3d878ce7d2f1d7a7b"], ["updated_at", Sat, 25 Aug 2012 00:38:30 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:38:30 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 197ms (Views: 197.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:47:41 UTC +00:00], ["encrypted_password", "ccf7c87923ad0f95dd770f705ac8d140254a8ec1971d369d87426b7e5ce4c8db"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "b9242b8fd42a97ac586e4fd0bd4d5b91e03e17747ff8a8acd51982eb2231a5d1"], ["updated_at", Sat, 25 Aug 2012 00:47:41 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:47:41 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 199ms (Views: 199.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:48:41 UTC +00:00], ["encrypted_password", "60c675187bf2d0bc878dc4e7cf740c03a2de55004639a13759a32b86eb616375"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "be4699904fa24b369e25af367e55a3ae9f90d9db875b5258f1411f6433bbbd73"], ["updated_at", Sat, 25 Aug 2012 00:48:41 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:48:41 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 195ms (Views: 195.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:50:20 UTC +00:00], ["encrypted_password", "fd7145c5bec98a60fd9b4a111266d4677e0ecf9c8468b1af71c13d6d7c8688b2"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "43e5f3af4ce1af3c336bb94ed0cf33faac4a1e5d972a12c93bf928b0ac7bc78b"], ["updated_at", Sat, 25 Aug 2012 00:50:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:50:20 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 230ms (Views: 229.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (1.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (17.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:51:25 UTC +00:00], ["encrypted_password", "ee8aff2d6866d379f0db7a3f0a7f403129d7fab305da18eee2929e37dac8c7e7"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "71ce3c5af286ce3f8247035e6ac57600e2d7d52041db5e9083f71e94fba12603"], ["updated_at", Sat, 25 Aug 2012 00:51:25 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:51:26 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 196ms (Views: 195.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 19:51:26 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:53:10 UTC +00:00], ["encrypted_password", "0b53bfce1f9ae5b01bc6b2c00a5f5336cb7ce6de5e2540f826ef5b76944d57e5"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "561aab957d591212e6b8d8e142b284356bd8e51e36acea8141e4b70ddccbcd34"], ["updated_at", Sat, 25 Aug 2012 00:53:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:53:11 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 216ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:54:08 UTC +00:00], ["encrypted_password", "a1d29762beea83a95e1e71d0e5fc1fbfb211ffa8a529f07f0369ee13cbbc6c39"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "f52d22c1a1ad2f108e800d696e2da52d3337ff8323eab02df41d84d536695c50"], ["updated_at", Sat, 25 Aug 2012 00:54:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:54:08 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 198ms (Views: 198.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:55:30 UTC +00:00], ["encrypted_password", "9b7e6a57cf5daa899b22106db83a46fb21d4a9a9e26fa4d68a8f71ff5def8dd9"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "fbe4249653398b6a15d9780abf62614911bf0b7c696ad2d196d848b3deaf8572"], ["updated_at", Sat, 25 Aug 2012 00:55:30 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:55:30 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 193ms (Views: 193.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (13.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 00:56:24 UTC +00:00], ["encrypted_password", "9cf044f658154130369252ad13ac163443946e2ce5208317c8fff1f834eb46d3"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "43be7db75ed643a111b63b4b640f1f47c990fa1812354126424e477569a36030"], ["updated_at", Sat, 25 Aug 2012 00:56:24 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 19:56:24 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 196ms (Views: 195.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (24.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 02:47:02 UTC +00:00], ["encrypted_password", "4010061774443fba70a106871ab90ae3267e113a403bdc81defadee68581cb91"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "012f17152d6304b18f1a595feec96f12db82e21d5678b12dd03e14b250b1933c"], ["updated_at", Sat, 25 Aug 2012 02:47:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 21:47:02 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 210ms (Views: 209.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (12.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 02:48:15 UTC +00:00], ["encrypted_password", "1257924385f8048c14e77d8f2772498de588ab44ab5198d7343d55e9d4d76c6f"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "87fc9fffa367694a7bc1ea440496fff4c5f66c3d78d97fa7b73a59e7fbf78b8d"], ["updated_at", Sat, 25 Aug 2012 02:48:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 21:48:16 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 160ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (13.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 02:55:30 UTC +00:00], ["encrypted_password", "90326801e7c0bd90cd1a7b9deb06c11d5ff87317da596e311f4b0f1973a79a2a"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "4527c343303ad7b01c249c6b38f1b75f4114f0e3943d5c5a0b748a3104050c47"], ["updated_at", Sat, 25 Aug 2012 02:55:30 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 21:55:30 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 161ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (12.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:00:17 UTC +00:00], ["encrypted_password", "4fb75f6b410fb4056075da5224cbbde4144289e019f34d478fb623dd79009c9c"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "873c09f3c0676b6cca68fea6c345e328fa6d23dcc0d62423c0f90b0f9ed979b6"], ["updated_at", Sat, 25 Aug 2012 03:00:17 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:00:17 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 191ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (43.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (12.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:04:37 UTC +00:00], ["encrypted_password", "4c7043316c54f67ea679664c2765c150b451208a628737ac917aab55eea14fb0"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "5f801e62cd5ce0330965c6be6a463af0dea2bffda90cbd8de308581fe95aa136"], ["updated_at", Sat, 25 Aug 2012 03:04:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:04:38 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 158ms (Views: 158.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 22:04:38 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (12.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:05:22 UTC +00:00], ["encrypted_password", "854c1faf49dc318d3e9ffe4efcaef42382b7fecef4373f8adc3954af3f52fc28"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "4fe45fdb690e1ade6b4aec152f24bfb9606d34bc199cc7bdbabdc2c5ab8edc0d"], ["updated_at", Sat, 25 Aug 2012 03:05:22 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:05:22 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 160ms (Views: 159.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 22:05:23 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (12.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:09:02 UTC +00:00], ["encrypted_password", "93bf2da7f0ef5fc36d03f22e09232334c5518f7b7e4070ad958e6d4b8e6e3c9a"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "3d4acbe5eb04e1af98f2d45ede0ab8da0e5fd02d52e1f553f39f5e854bfdc1e7"], ["updated_at", Sat, 25 Aug 2012 03:09:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:09:02 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 160ms (Views: 159.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 22:09:02 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (35.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:25:18 UTC +00:00], ["encrypted_password", "5d1dc6a434a8791e153e40b312b4afe0e69df57194758ea045647fd1deb08755"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "b83468739aa3cb46a5e5992c281d0241c82fef3040394a94f9a364917ee2105d"], ["updated_at", Sat, 25 Aug 2012 03:25:18 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:25:18 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 179ms (Views: 178.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 22:25:19 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (35.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:28:35 UTC +00:00], ["encrypted_password", "ea412327887c397dde9ea227d29d40326dae64cbe4b8cedb4a55aab9b5734325"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "04b314f992e38c3bd971b2bf001fe80e46f44e7db8a4abbb2d86bd283a5e3374"], ["updated_at", Sat, 25 Aug 2012 03:28:35 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:28:35 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 181ms (Views: 180.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 22:28:36 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (50.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (40.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:35:45 UTC +00:00], ["encrypted_password", "7841cbd0ece818345b5e47c7d035daaff111c3e199e327cb48111cd74f2d887c"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "dfb0f6d13b06f820fcb4f85978eb22ed9553f66eb1c3ee46e58b17b92ef4a47e"], ["updated_at", Sat, 25 Aug 2012 03:35:45 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:35:46 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 199ms (Views: 198.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 22:35:46 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 90ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (35.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:40:14 UTC +00:00], ["encrypted_password", "74364509214eec6e0cd4c1628555b135265cfb2971be0eec68ca4c164dd97d95"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "05cf920d5a0ddbde5efe5056b9e12eaa2a0295abd1a738c6f9bd3654db5ea9c2"], ["updated_at", Sat, 25 Aug 2012 03:40:14 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:40:14 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 197ms (Views: 196.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 22:40:14 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 79ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (35.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:43:26 UTC +00:00], ["encrypted_password", "e1444b477847a1dafbd29985340811125eb6b9d92a52a9c44453df9d40f5cb1f"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "6697a4c814bc9bd46d292cf838d6fc24776252a36f7dd55f01866d27dafe23f5"], ["updated_at", Sat, 25 Aug 2012 03:43:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:43:26 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 183ms (Views: 183.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 22:43:27 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (36.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 03:44:35 UTC +00:00], ["encrypted_password", "88128e8f78aa7744a15892a2082a71fdab11607d9cba49d1315a185bea25fcda"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "ffe66cafc32babe7bdb5fb0a44c00c9bd85162ef2c00c4514d43c71607bdab99"], ["updated_at", Sat, 25 Aug 2012 03:44:35 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:44:35 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 185ms (Views: 184.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-24 22:44:35 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-24 22:44:35 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-24 22:44:35 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (2.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (40.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 05:57:28 UTC +00:00], ["encrypted_password", "f88c2977cac51a72a65b33905cf99639db37d793218df734cb12071a0969de30"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "830dfed2fc29ea6152d034496842cd22f00d67d578a6df9a07c25d95820daa23"], ["updated_at", Sat, 25 Aug 2012 05:57:28 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 00:57:28 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 221ms (Views: 220.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 00:57:29 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 97ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 00:57:29 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 00:57:29 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 05:57:29 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 05:57:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (12.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 05:59:14 UTC +00:00], ["encrypted_password", "fca123513ef3151458cad80364fac125cba02555f7b5a86213a8a454a36d0402"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "26b4a395341ce86beb45efa647193eaba636c70509a69d75268711c8a2ff5090"], ["updated_at", Sat, 25 Aug 2012 05:59:14 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 00:59:14 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 195ms (Views: 194.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 00:59:15 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 00:59:15 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 00:59:15 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 05:59:15 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 05:59:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (7.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (1.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (12.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 06:00:56 UTC +00:00], ["encrypted_password", "9a7d6f2be76b371d557688c82b009fced759510330e0f4bfc28a0ccd93776ad9"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "70392f159780145632a0314e551cc995f96d3c43195e60ac9d20e883b53d8cf4"], ["updated_at", Sat, 25 Aug 2012 06:00:56 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:00:56 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 183ms (Views: 183.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 01:00:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 01:00:56 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:00:56 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 06:00:56 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 06:00:56 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (8.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (35.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 06:02:26 UTC +00:00], ["encrypted_password", "6e000333225cc1105766f2f92b051c7cabe6348621775274d9f05bb16d9195d2"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "feee9d645213d4468476402a973bca3a8ab249c9a9b535f14d5bca3afc18e329"], ["updated_at", Sat, 25 Aug 2012 06:02:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:02:27 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 185ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 01:02:27 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 01:02:27 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:02:27 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 06:02:27 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 06:02:27 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/offers" for 127.0.0.1 at 2012-08-25 01:02:27 -0500
+Processing by OffersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (3.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (1.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (55.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 06:10:39 UTC +00:00], ["encrypted_password", "d05883404e18883616cb54ffb34198fac79065376e47442a33618d6ea4af020a"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "6212a1f5d05d7c6176755aebd48847808d98a86f6488d6e00d8cfe910722d794"], ["updated_at", Sat, 25 Aug 2012 06:10:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:10:39 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 188ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 01:10:40 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 01:10:40 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:10:40 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 06:10:40 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 06:10:40 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "offers" WHERE (player = '101')[0m
+SQLite3::SQLException: no such column: player: SELECT COUNT(*) FROM "offers"  WHERE (player = '101')
+  [1m[35m (3.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (35.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 06:11:34 UTC +00:00], ["encrypted_password", "5ae0a027db8eee52897b8a7fb8e81c3d8a11505b5c3adfad05baf5d0e151fca3"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "cf545284fcd64e09a6d7139066a4fe36e06d41d6663e2e25264e26e468907210"], ["updated_at", Sat, 25 Aug 2012 06:11:34 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:11:34 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 184ms (Views: 183.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 01:11:35 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 01:11:35 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:11:35 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 06:11:35 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 06:11:35 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "offers" WHERE (playerid = '101')[0m
+  [1m[35m (3.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 06:13:15 UTC +00:00], ["encrypted_password", "721801c3887980dffa29709458bb0c38ec6fdd189e1a1077c40f5fdd470d90ce"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "a51be8f31815c2642fc04b3b61d1859cd9c9057d28151f455e63aa32f6fb0769"], ["updated_at", Sat, 25 Aug 2012 06:13:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:13:15 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 183ms (Views: 182.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 01:13:15 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 01:13:15 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:13:15 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 06:13:15 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 06:13:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "offers" WHERE (playerid = '101')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "offers" 
+  [1m[36m (7.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (38.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 06:19:45 UTC +00:00], ["encrypted_password", "aa405e1f6a511bdb0e61d85f255aa034880f824f2f8c80fc43d3ab783ba3877e"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "5a8d3c0db3225281b5d30436226d7d33810bd8f64dde6374749e6515b8354787"], ["updated_at", Sat, 25 Aug 2012 06:19:45 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:19:45 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 208ms (Views: 207.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 01:19:46 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 83ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 01:19:46 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:19:46 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 06:19:46 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 06:19:46 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "offers" WHERE (playerid = '101')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "offers" 
+  [1m[36m (3.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (39.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 06:21:43 UTC +00:00], ["encrypted_password", "6172aa4bc5d22bc711bf3c30fea0a02b5ce79f423ad1e73bb6d14592d51f9fb0"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "d1acbbb3aefa2092bb563148b534db5a73734b690b5ddbf3b3bb616b2dbd9944"], ["updated_at", Sat, 25 Aug 2012 06:21:43 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:21:44 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 187ms (Views: 186.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 01:21:44 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 01:21:44 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:21:44 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 06:21:44 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 06:21:44 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "offers" WHERE (playerid = '101')[0m
+  [1m[35m (4.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+DEPRECATED > Mobylette: Please don't user :fall_back to configure fall backs any more. See the README for :fallback_chains instead.
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "players" WHERE "players"."name" = 'John Doe' LIMIT 1[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT 1 AS one FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "players" ("address", "clublevel", "contact", "created_at", "encrypted_password", "encrypted_password_confirmation", "name", "playerid", "ptsBal", "ptsRed", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "some address"], ["clublevel", "some club"], ["contact", nil], ["created_at", Sat, 25 Aug 2012 06:23:37 UTC +00:00], ["encrypted_password", "7b70d7d2e086cd7f1d1d5ad360dc64a160e8c23ffd26e5b1c5fffd7df93523bc"], ["encrypted_password_confirmation", nil], ["name", "John Doe"], ["playerid", "101"], ["ptsBal", 1254], ["ptsRed", 4521], ["salt", "2683e011f45f4bd3dbcf036bad0d2f598f9f69f293295ea11346f24d229c1060"], ["updated_at", Sat, 25 Aug 2012 06:23:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:23:37 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 213ms (Views: 212.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-08-25 01:23:38 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."playerid" = '101' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 88ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/player_home" for 127.0.0.1 at 2012-08-25 01:23:38 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."playerid" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/signin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-08-25 01:23:38 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "offers" ("code", "created_at", "description", "enddate", "playerid", "read", "startdate", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["code", "1111"], ["created_at", Sat, 25 Aug 2012 06:23:38 UTC +00:00], ["description", "this is test"], ["enddate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Mon, 09 Jan 2012 00:00:00 UTC +00:00], ["updated_at", Sat, 25 Aug 2012 06:23:38 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "offers" WHERE (playerid = '101')[0m
+  [1m[35m (3.0ms)[0m  rollback transaction

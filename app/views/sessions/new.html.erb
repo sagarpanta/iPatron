@@ -1,0 +1,32 @@
+<div data-role="page" id="signin_page">
+
+<div data-role="header">
+	<%= image_tag '/assets/TechResultsCasinoBanner.png' , width:'100%' %>
+</div>
+
+
+<div data-role="content">
+
+<%= form_for(:session, :url => sessions_path) do |f| %>
+  <div class="field">
+    PlayerID<br />
+    <%= f.text_field :playerid  %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions" id="submit">
+    <%= f.submit "Sign In" %>
+  </div>
+<% end %>
+
+
+</div>
+
+<div id="paste"></div>
+
+<div id="signin_notification" style="display:none"><%= image_tag '/assets/dark.png' %></div>
+
+	
+</div>

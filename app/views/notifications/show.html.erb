@@ -1,0 +1,42 @@
+
+<div data-role="page" id="show_notificationoffer_page">
+
+
+
+<div data-role="header" >
+	<%= image_tag '/assets/TechResultsCasinoBanner.png' , width:'100%' %>
+</div>
+
+<div class="ui-bar ui-bar-b">
+	<h3 class="alignleft"><%=  @notification.description %></h3>
+	<div class = "alignright" id='show_offer_notification'><%= link_to (image_tag ('/assets/dark.png')) , notifications_url  %></div>
+	<div style="clear: both;"></div>
+</div>
+
+
+<div data-role="content">
+			<div id="show_notification">
+				<% @notification.mark_as_read %>
+				<% Offer.mark_as_read(@notification.notificationid) %>
+				<% if @notification.notification == 'offers' %>
+					<div id='notification_img' style="line-height:200px;"><%= image_tag '/assets/'+@notification.code+'o.png' , :width =>'90%' , :height=> '50%' %></div>
+				<% end %>
+			</div>
+
+</div>
+
+	
+	<div data-role="footer" data-position="fixed" >
+		<div data-role="navbar" >
+			<ul>
+				<li><%= link_to '' , player_home_path, 'data-icon' => 'home' %></li>
+				<li id="offer1"><%= link_to '', offers_path, 'data-icon' => 'offer' %></li>
+				<li id="event1"><%= link_to '' , player_home_path, 'data-icon' => 'event' %></li>
+				<li id="promotion1"><%= link_to '', player_home_path, 'data-icon' => 'promotion' %></li>
+				<li id="news1"><%= link_to '', announcements_path, 'data-icon' => 'news' %></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+
+	
+</div>

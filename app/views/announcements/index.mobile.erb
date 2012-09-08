@@ -1,0 +1,27 @@
+
+
+
+
+
+
+<div data-role="content">
+	<div id="news_content">
+
+	  <%= render '/announcements/realtimeannouncement' %>
+	  <table >
+		  <% @announcements.each do |a| %>
+					<tr class="announcements_list">
+						<td><p><%= a.description %></p></td>
+					</tr>
+		  <% end %>
+	  </table>
+	</div>
+</div>
+
+
+
+
+
+
+
+

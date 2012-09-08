@@ -1,0 +1,45 @@
+
+
+
+
+
+<div data-role="content" >
+	<div id="offers_content">
+		<% if signed_in? %>
+		  <table>
+		  <% @offers.each do |o| %>
+			<% if o.read == 0 %>
+					<tr class="offer_list_unread" data-time="<%=  o.created_at  %>">
+						<td class="spacer"><%= image_tag '/assets/spacer.png' %></td><td class="image"><%= image_tag  o.code+'o.png' , :width =>'60px' , :height=> '60px' %></td>
+						<td class="description"><h3><%= o.description %></h3>
+							<p>Start Date: <%= o.startdate.strftime("%b %d, %Y") %></p>
+							<p>End Date: <%= o.enddate.strftime("%b %d, %Y") %></p>
+
+						<td class="mark_as_read">
+							<%= image_tag '/assets/unread1.png' , :class=> "unread" %>
+							<p class="read" style="display:none">/offers/<%= o.id   %></p>
+						</td>
+					</tr>
+			<% else %>
+				<tr class="offer_list" data-time="<%=  o.created_at  %>">
+					<td class="spacer"><%= image_tag '/assets/spacer.png' %></td><td class="image"><%= image_tag o.code+'o.png' , :width =>'60px' , :height=> '60px' %></td>
+					<td class="description">
+						<h3><%= o.description %></h3>
+						<p>Start Date: <%= o.startdate.strftime("%b %d, %Y") %></p>
+						<p>End Date: <%= o.enddate.strftime("%b %d, %Y") %></p>
+					</td>
+
+					
+				</tr>
+			
+			<% end %>
+		  <% end %>
+		  </table>
+		<% else %>
+			You are not signed in<br/>
+			<% link_to signin_path %>
+		<% end %>
+	</div>
+</div>
+
+	

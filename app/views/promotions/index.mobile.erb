@@ -1,0 +1,54 @@
+
+
+
+
+
+<div data-role="content">
+
+	<div id="promotions_content">
+
+		<% if signed_in? %>
+		  <%= render '/promotions/realtimepromotion' %>
+		  <table >
+		  <% @promotions.each do |p| %>
+			<% if p.read == 0 %>
+					<tr class="promotion_list_unread" data-time="<%=  p.created_at  %>">
+						<td class="image"><%= image_tag '/assets/default_promotion.png' , :width =>'60px' , :height=> '60px' %></td>
+						<td class="description">
+							<h3><%= p.description %></h3>
+							<p>Entries: <%= p.num_of_entries %></p>
+							<p>Start Date: <%= p.startdate.strftime("%b %d, %Y") %>&nbsp;&nbsp;&nbsp;End Date: <%= p.endate.strftime("%b %d, %Y") %></p>
+							<p>Drawing: <%= p.drawingtime.strftime("%b %d, %Y %I:%M%p") %></p>
+						</td>
+											
+						<td class="mark_as_read">
+							<%= image_tag '/assets/unread1.png' , :class=> "unread" %>
+							<p class="read" style="display:none">/promotions/<%= p.id   %></p>
+						</td>
+					</tr>
+			<% else %>
+				<tr class="promotion_list" data-time="<%=  p.created_at  %>">
+					<td class="image"><%= image_tag '/assets/default_promotion.png' , :width =>'60px' , :height=> '60px' %></td>
+					<td class="description">
+						<h3><%= p.description %></h3>
+						<p>Entries: <%= p.num_of_entries %></p>
+						<p>Start Date: <%= p.startdate.strftime("%b %d, %Y") %>&nbsp;&nbsp;&nbsp;End Date: <%= p.endate.strftime("%b %d, %Y") %></p>
+						<p>Drawing: <%= p.drawingtime.strftime("%b %d, %Y %I:%M%p") %></p>
+					</td>
+
+					
+				</tr>
+			
+			
+			<% end %>
+		  <% end %>
+		  </table>
+		<% else %>
+			You are not signed in<br/>
+			<% link_to signin_path %>
+		<% end %>
+	</div>
+
+</div>
+
+	
