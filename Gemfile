@@ -16,7 +16,7 @@ gem 'jquery_mobile_rails'
 
 group :developement, :test do
   gem 'pry'
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'cucumber-rails'
   gem 'cucumber'
   gem 'database_cleaner'
