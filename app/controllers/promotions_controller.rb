@@ -8,13 +8,21 @@ class PromotionsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @promotions }
+      format.xml { render xml: @promotions }
     end
   end
 
   # GET /promotions/1
   # GET /promotions/1.json
   def show
-    @promotion = Promotion.find(params[:id])
+    @promotion = Promotion.find_all_by_id_and_playerid(params[:id], params[:playerid])
+	@promotion[0].read = 1
+	@promotion[0].save
+	
+	@notification = Notification.find_all_by_notificationid_and_notification(@promotion[0].id, 'promotions')
+	@notification[0].read = 1
+	@notification[0].save
+
 
     respond_to do |format|
       format.html # show.html.erb

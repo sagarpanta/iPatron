@@ -2,19 +2,35 @@ class NotificationsController < ApplicationController
   # GET /notifications
   # GET /notifications.json
   def index
-    @notifications = Notification.where('playerid = ?' , current_player.playerid).order("created_at desc")
-	
+    @notifications = Notification.find_all_by_playerid(params[:playerid])
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @notifications }
+      format.xml { render xml: @notifications }
     end
   end
 
   # GET /notifications/1
   # GET /notifications/1.json
   def show
-    @notification = Notification.find(params[:id])
+    @notification = Notification.find_all_by_id_and_playerid(params[:id], params[:playerid])[0]
+	@notification.read = 1
+	@notification.save
+	
+	if @notification.notification == 'offers'
+		@offer = Offer.find_by_id(@notification.notificationid)
+		@offer.read = 1
+		@offer.save
+	elsif @notification.notification == 'events'
+		@event = Event.find_by_id(@notification.notificationid)
+		@event.read = 1
+		@event.save
+	elsif @notification.notification == 'promotions'
+		@promotion = Promotion.find_by_id(@notification.notificationid)
+		@promotion.read = 1
+		@promotion.save
+	end
 
     respond_to do |format|
       format.html # show.html.erb

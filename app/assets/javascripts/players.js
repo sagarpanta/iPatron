@@ -71,6 +71,7 @@ $(document).ready(function() {
 	
 	$(".foffer").live('click', function(){
 		var page = $('.page_offers').html();
+		alert(page);
 
 		$.ajax({
 			url: page,

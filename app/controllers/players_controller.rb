@@ -8,6 +8,7 @@ class PlayersController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @players }
+	  format.xml
     end
   end
 
@@ -88,18 +89,10 @@ class PlayersController < ApplicationController
 	else
 		@player = current_player
 		
-		read_or_unread = Notification.where('playerid=?' ,current_player.playerid ).sum('bulb')
-		if read_or_unread == 0 
-			@image_tag = '/assets/redlight.png'
-			@height = '31px'
-		else 
-			@image_tag = '/assets/greenlight.png'
-			@height  =  '30px'
-		end
-		
 	    respond_to do |format|
-		format.mobile
-		format.json { head :no_content }
+			format.html
+			format.json { render json: @player }
+			format.xml {render xml: @player}
 		end
 	end
   end
@@ -108,7 +101,7 @@ class PlayersController < ApplicationController
    def test
 	    respond_to do |format|
 		format.html 
-		format.json { head :no_content }
+		format.json { render json: @player }
 		end
 	end
 	

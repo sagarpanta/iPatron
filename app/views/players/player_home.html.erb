@@ -4,41 +4,95 @@
 
 
 
-<div data-role="header" >
-	<%= image_tag '/assets/TechResultsCasinoBanner.png' , width:'100%' %>
-</div>
-
-
-
-	<div data-role="content">
+	<div data-role="header"  data-tap-toggle="false" data-position="fixed">
+		<%= image_tag '/assets/header.jpg', width:'100%' %>
+		<div class="ui-bar">
+			
+			<h3 class="alignleft"><%= current_player.name.split()[0].capitalize + ' '+ current_player.name.split()[1].capitalize %></h3>
+			
+			<div class = "alignright" id='home_notification'>
+				<%= image_tag(@image_tag, :width=> '35px' , :height=> @height )  %>
+			</div>
+			<%= link_to 'Log Out', signout_path , :class=> 'logout' %>
+			<div style="clear: both;"></div>
+			
+		</div>
+	</div>
 	
 	
-		  <p style="text-align: center; font-size:20px;">Welcome <%= current_player.name %>!</p>
-		  <div id="img"><%= image_tag '/assets/Gold.png' , :width=> 200 %></div>
-			<% if signed_in? %>
-				<table id="balance">
-					<tr  id='_bal'><td>Balances</td></tr>
-					<tr><td>Points Redeemed :</td><td><%= number_with_delimiter(@player.ptsRed, :delimiter => ',') %></td></tr>
-					<tr><td>Points Balance  :</td><td><%= number_with_delimiter(@player.ptsBal, :delimiter => ',') %></td></tr>
-				</table>
 
-			<% else %>
-				You are not signed in<br/>
-				<% link_to signin_path %>
-			<% end %>
+
+
+	<div data-role="content" >
+		<div id="home_content">
+	
+
+			
+			<div id="img"><%= image_tag '/assets/Gold.png' , :width=> 200 %>
+				<div id="clublevelname"><%= current_player.name %></div>
+				<div id="clublevelid"><%= current_player.playerid %></div>
+			</div>
+		
+		
+			<div id="info">
+					<p style="text-align:center">Member Details</p>
+					<hr style="height:0em;width: 80%" />
+					<table style="width:80%">
+						<tr class="tr"><td class="td1">Name: </td><td class="td2"> <%= current_player.name %></td></tr>
+						<tr class="tr"><td class="td1">PlayerID: </td><td class="td2"> <%= current_player.playerid %></td></tr>
+						<tr class="tr"><td class="td1">Contact: </td><td class="td2"> <%= current_player.contact %></td></tr>		
+						<tr class="tr"><td class="td1">Host: </td><td class="td2"> Sagar Pant</td></tr>
+						<tr class="tr"><td class="td1">Host Email: </td><td class="td2"> spant@techresults.com</td></tr>
+						<tr class="tr"><td class="td1">Host Contact: </td><td class="td2"> 7025432155</td></tr>
+					</table>
+					<br/>
+			</div>
 			
 
+
+		
+			<div id="balance">
+			<p style="text-align:center">Points</p>
+			<hr style="height:0em;width: 80%" />
+				<table style="width:80%">
+					<tr class="tr"><td class="td1">Redeemed:</td><td class="td2"><%= number_with_delimiter(@player.ptsRed, :delimiter => ',') %></td></tr>
+					<tr class="tr"><td class="td1">Balance:</td><td class="td2"><%= number_with_delimiter(@player.ptsBal, :delimiter => ',') %></td></tr>
+				</table>
+			</div>
+			<br/>
+				
+
+
+		</div>	
+		<div id='current_player' style="display:none"><%= current_player.playerid %></div>
+		<div id="transfer_total_bulb_count" style="display:none"><%= Notification.where('playerid=?' ,current_player.playerid ).sum('bulb') %></div>
+
+
 	</div>
 	
-	<div data-role="footer" data-position="fixed" >
-		<div data-role="navbar" >
-			<ul>
-				<li><%= link_to '' , player_home_path, 'data-icon' => 'home' %></li>
-				<li><div id="promotion1"></div><%= link_to '', player_home_path, 'data-icon' => 'promotion' %></li>
-				<li><div id="event1"></div><%= link_to '' , player_home_path, 'data-icon' => 'event' %></li>
-			</ul>
-		</div><!-- /navbar -->
+
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" >
+				<ul>
+					<li class='fhome'><%= image_tag('/assets/home.jpg', :class=> 'footer_img', :width=> '100%') %></li>
+					<li class='foffer'><%= image_tag('/assets/offers.jpg', :class=> 'footer_img',:width=> '100%') %></li>
+					<li class='fevent'><%= image_tag('/assets/events.jpg',:class=> 'footer_img', :width=> '100%') %></li>
+					<li class='fpromo'><%= image_tag('/assets/promo.jpg',:class=> 'footer_img', :width=> '100%') %></li>
+					<li class='fnews'><%= image_tag('/assets/news.jpg', :class=> 'footer_img',:width=> '100%') %></li>
+				</ul>
+
 	</div>
+	
+	
+	<div class="page_home" style="display:none">/player_home</div>
+	<div class="page_offers" style="display:none">/offers?</div>
+	<div class="page_events" style="display:none">/events</div>
+	<div class="page_promotions" style="display:none">/promotions</div>
+	<div class="page_news" style="display:none">/announcements</div>
+	<div class="page_notifications" style="display:none">/notifications</div>
 
 
 </div>
+
+
+
+

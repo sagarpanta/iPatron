@@ -2,18 +2,25 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.where('playerid = ?' , current_player.playerid).order("created_at desc")
+    @events = Event.find_all_by_playerid(params[:playerid])
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @events }
+	  format.xml {render xml: @events}
     end
   end
 
   # GET /events/1
   # GET /events/1.json
   def show
-    @event = Event.find(params[:id])
+    @event = Event.find_all_by_id_and_playerid(params[:id], params[:playerid])
+	@event[0].read = 1
+	@event[0].save
+	
+	@notification = Notification.find_all_by_notificationid_and_notification(@event[0].id, 'events')
+	@notification[0].read = 1
+	@notification[0].save
 
     respond_to do |format|
       format.html # show.html.erb
