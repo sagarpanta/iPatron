@@ -25,7 +25,6 @@ group :developement, :test do
   gem 'capybara'
   gem 'rspec-rails'
   gem 'simplecov', :require => false
-
 end
 
 
