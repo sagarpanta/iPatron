@@ -88,7 +88,9 @@ class PlayersController < ApplicationController
 		redirect_to signin_path
 	else
 		@player = current_player
-		
+		@bulbs = Notification.where('playerid = ?' , @player.playerid).sum('bulb')
+		@player["total_bulbs"] = @bulbs
+		@player.save
 	    respond_to do |format|
 			format.html
 			format.json { render json: @player }

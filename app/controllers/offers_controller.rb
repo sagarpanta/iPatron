@@ -2,8 +2,13 @@ class OffersController < ApplicationController
   # GET /offers
   # GET /offers.json
   def index
-    @offers = Offer.find_all_by_playerid(params[:playerid])
+    @offers = Offer.order("created_at desc").find_all_by_playerid(params[:playerid])
+	@bulbs = Notification.where('playerid = ?' , params[:playerid]).sum('bulb')
 	
+	@offers.each do |offer|
+		offer["total_bulbs"] = @bulbs
+		offer.save
+	end
 		respond_to do |format|
 		  format.html # index.html.erb
 		  format.json { render json: @offers }
@@ -14,14 +19,20 @@ class OffersController < ApplicationController
   # GET /offers/1
   # GET /offers/1.json
   def show
-    @offer = Offer.find_all_by_id_and_playerid(params[:id], params[:playerid])
-	@offer[0].read = 1
-	@offer[0].save
-	
-	@notification = Notification.find_all_by_notificationid_and_notification(@offer[0].id, 'offers')
-	@notification[0].read = 1
-	@notification[0].save
+    @offer = Offer.find_all_by_id_and_playerid(params[:id], params[:playerid])[0]
+	@offer.read = 1
+	@offer.save
 
+	@notification = Notification.find_all_by_notificationid_and_notification(@offer.id, 'offers')
+	@notification[0].read = 1
+	@notification[0].bulb = 0
+	@notification[0].save
+	
+
+	@bulbs = Notification.where('playerid = ?' , params[:playerid]).sum('bulb')
+	@offer["total_bulbs"] = @bulbs
+	@offer.save
+	
 
     respond_to do |format|
       format.html # show.html.erb
@@ -53,8 +64,10 @@ class OffersController < ApplicationController
     respond_to do |format|
       if @offer.save
 		@offer.update_notification
-	
-        format.html { redirect_to @offer, notice: 'Offer was successfully created.' }
+		@offer.push
+
+        format.html { redirect_to offers_path(:playerid => current_player.playerid)}
+		#offer_path(@offer, :playerid=> current_player.playerid), notice: 'Offer was successfully created.' }
         format.json { render json: @offer, status: :created, location: @offer }
       else
         format.html { render action: "new" }

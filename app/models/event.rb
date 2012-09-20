@@ -22,4 +22,12 @@ class Event < ActiveRecord::Base
 	Notification.insert_new_record( id, code, 'events' ,  description , read  , playerid ,  1 , startdate ,enddate, '1900-01-01' , -2)
  end
  
+   def push
+   	@bulbs = Notification.where('playerid = ?' , playerid).sum('bulb')
+      PN.publish({
+        'channel' => 'rails',
+        'message' => {"object"=> "event" , 'total_bulbs'=> @bulbs, "id"=> id , "code" => code , "description" => description , "enddate" => enddate , "playerid" => playerid, "startdate" => startdate , "read" => read}
+      })
+  end
+ 
 end

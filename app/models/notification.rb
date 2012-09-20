@@ -33,5 +33,6 @@ class Notification < ActiveRecord::Base
 		@notification.num_of_entries = num_of_entries
 		@notification.save
    end
+   
   
 end

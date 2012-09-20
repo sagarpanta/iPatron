@@ -3,6 +3,12 @@ class NotificationsController < ApplicationController
   # GET /notifications.json
   def index
     @notifications = Notification.find_all_by_playerid(params[:playerid])
+	
+	@notifications.each do |notification|
+		notification.bulb = 0
+		notification.save
+	
+	end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -16,6 +22,7 @@ class NotificationsController < ApplicationController
   def show
     @notification = Notification.find_all_by_id_and_playerid(params[:id], params[:playerid])[0]
 	@notification.read = 1
+	@notification.bulb = 0
 	@notification.save
 	
 	if @notification.notification == 'offers'

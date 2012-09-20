@@ -1,67 +1,30 @@
+<h1>Listing offers</h1>
 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Period</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
 
-<div data-role="page" id="offer_page">
+<% @offers.each do |offer| %>
+  <tr>
+    <td><%= offer.code %></td>
+    <td><%= offer.description %></td>
+    <td><%= offer.startdate %></td>
+    <td><%= offer.enddate %></td>
+    <td><%= offer.playerid %></td>
+    <td><%= offer.read %></td>
+    <td><%= link_to 'Show', offer %></td>
+    <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
+    <td><%= link_to 'Destroy', offer, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
 
+<br />
 
+<%= link_to 'New offer', new_offer_path %>
 
-<div data-role="header" >
-	<%= image_tag '/assets/TechResultsCasinoBanner.png' , width:'100%' %>
-</div>
-
-<div class="ui-bar ui-bar-b">
-	<h3 class="alignleft">Offers</h3>
-	<div class = "alignright" id='offer_notification'><%= link_to (image_tag ('/assets/dark.png')) , notifications_path  %></div>
-	<div style="clear: both;"></div>
-</div>
-
-
-
-<div data-role="content">
-
-
-
-	<% if signed_in? %>
-	  <% @offers.each do |o| %>
-		  
-		  <% if o.read == 0  %>
-			<ul data-role="listview" data-theme="e" data-split-icon="gear" data-split-theme="d">
-			  <li id="offer" data-time="<%=  o.created_at  %>"><a href="/offers/<%= o.id %>" class="ui-link-inherit">
-				<%= image_tag o.code+'o.png' %>
-				<h3><%= o.description %><%= o.read %></h3>
-				</a>
-			  </li>
-			</ul>
-		  <% else %>
-			<ul data-role="listview" data-theme="d" data-split-icon="gear" data-split-theme="d">
-			  <li id="offer" data-time="<%=  o.created_at  %>"><a href="/offers/<%= o.id %>" class="ui-link-inherit">
-				<%= image_tag o.code+'o.png' %>
-				<h3><%= o.description %><%= o.read %></h3>
-				</a>
-			  </li>
-			</ul>
-		  <% end %>
-	  <% end %>
-
-	<% else %>
-		You are not signed in<br/>
-		<% link_to signin_path %>
-	<% end %>
-</div>
-
-	
-	<div data-role="footer" data-position="fixed" >
-		<div data-role="navbar" >
-			<ul>
-				<li><%= link_to '' , player_home_path, 'data-icon' => 'home' %></li>
-				<li id="offer1"><%= link_to '', offers_path, 'data-icon' => 'offer' %></li>
-				<li id="event1"><%= link_to '' , player_home_path, 'data-icon' => 'event' %></li>
-				<li id="promotion1"><%= link_to '', player_home_path, 'data-icon' => 'promotion' %></li>
-				<li id="news1"><%= link_to '', announcements_path, 'data-icon' => 'news' %></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div>
-
-	
-</div>
-
-<%= link_to 'New Offer' , new_offer_path %>

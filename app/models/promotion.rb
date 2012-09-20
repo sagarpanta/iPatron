@@ -15,7 +15,15 @@ class Promotion < ActiveRecord::Base
 
  
  def update_notification
-	Notification.insert_new_record( id, code, 'promotions' ,  description , read  , playerid ,  1 , startdate ,enddate, drawingtime , num_of_entries)
+	Notification.insert_new_record( id, code, 'promotions' ,  description , read  , playerid ,  1 , startdate ,endate, drawingtime , num_of_entries)
  end
+ 
+   def push
+      @bulbs = Notification.where('playerid = ?' , playerid).sum('bulb')
+      PN.publish({
+        'channel' => 'rails',
+        'message' => {"object"=> "promotion" , 'total_bulbs'=> @bulbs, "id"=> id , "code" => code , "description" => description , "drawingtime"=>drawingtime, "num_of_entries"=>num_of_entries, "endate" => endate , "playerid" => playerid, "startdate" => startdate , "read" => read}
+      })
+  end
  
 end

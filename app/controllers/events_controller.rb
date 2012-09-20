@@ -2,8 +2,13 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.find_all_by_playerid(params[:playerid])
-
+    @events = Event.order("created_at desc").find_all_by_playerid(params[:playerid])
+	@bulbs = Notification.where('playerid = ?' , params[:playerid]).sum('bulb')
+	
+	@events.each do |event|
+		event["total_bulbs"] = @bulbs
+		event.save
+	end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @events }
@@ -14,13 +19,20 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
-    @event = Event.find_all_by_id_and_playerid(params[:id], params[:playerid])
-	@event[0].read = 1
-	@event[0].save
+    @event = Event.find_all_by_id_and_playerid(params[:id], params[:playerid])[0]
+	@event.read = 1
+	@event.save
 	
-	@notification = Notification.find_all_by_notificationid_and_notification(@event[0].id, 'events')
+	@notification = Notification.find_all_by_notificationid_and_notification(@event.id, 'events')
 	@notification[0].read = 1
+	@notification[0].bulb = 0
 	@notification[0].save
+	
+	@bulbs = Notification.where('playerid = ?' , params[:playerid]).sum('bulb')
+	@event["total_bulbs"] = @bulbs
+	@event.save
+	
+
 
     respond_to do |format|
       format.html # show.html.erb
@@ -52,7 +64,8 @@ class EventsController < ApplicationController
     respond_to do |format|
       if @event.save
 		@event.update_notification
-        format.html { redirect_to @event, notice: 'Event was successfully created.' }
+		@event.push
+        format.html { redirect_to events_path(:playerid=>current_player.playerid), notice: 'Event was successfully created.' }
         format.json { render json: @event, status: :created, location: @event }
       else
         format.html { render action: "new" }

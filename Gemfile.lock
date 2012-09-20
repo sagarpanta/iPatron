@@ -96,6 +96,8 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.3.1)
       win32console (~> 1.3)
+    pubnub-ruby (0.0.9)
+      json
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -187,6 +189,7 @@ DEPENDENCIES
   jquery_mobile_rails
   mobylette
   pry
+  pubnub-ruby
   rails
   rspec-rails
   sass-rails (~> 3.2.3)

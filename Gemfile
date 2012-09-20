@@ -6,13 +6,15 @@ gem 'rails'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-#gem 'tiny_tds'
-#gem 'activerecord-sqlserver-adapter'
+gem 'tiny_tds'
+gem 'activerecord-sqlserver-adapter'
 
 gem 'mobylette'
 gem 'jquery_mobile_rails'
 
-gem 'pg'
+gem 'pubnub-ruby'
+
+#gem 'pg'
 
 group :developement, :test do
   gem 'pry'
