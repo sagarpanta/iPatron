@@ -12,7 +12,8 @@ gem 'rails'
 #gem 'mobylette'
 #gem 'jquery_mobile_rails'
 
-gem 'pubnub-ruby'
+####pubnub-ruby has not been updated
+#gem 'pubnub-ruby'
 
 gem 'pg'
 

@@ -995,3 +995,730 @@ DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing
   [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:53.245'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
   [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
 Completed 200 OK in 59ms (Views: 2.0ms | ActiveRecord: 48.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36mSQL (0.0ms)[0m  [1mUSE [mobileCRM][0m
+
+
+Started GET "/player_home.json?_=1348248069797" for 192.168.3.122 at 2012-09-21 12:21:16 -0500
+Processing by PlayersController#player_home as JSON
+  Parameters: {"_"=>"1348248069797"}
+  [1m[35mPlayer Load (0.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from player_home at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/players_controller.rb:92)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[name] = N''John Doe'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'[0m
+  [1m[35mPlayer Exists (1.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[playerid] = N''101'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'
+  [1m[36mSQL (1.0ms)[0m  [1mIF @@TRANCOUNT > 0 ROLLBACK TRANSACTION[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT @@TRANCOUNT
+Completed 200 OK in 296ms (Views: 13.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348248075181" for 192.168.3.122 at 2012-09-21 12:21:18 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348248075181"}
+  [1m[36mOffer Load (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:21:18.165'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:21:18.169'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (46.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:21:18.219'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 76ms (Views: 1.0ms | ActiveRecord: 52.0ms)
+
+
+Started GET "/events.json?playerid=101&_=1348248077106" for 192.168.3.122 at 2012-09-21 12:21:20 -0500
+Processing by EventsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348248077106"}
+  [1m[35mEvent Load (0.0ms)[0m  EXEC sp_executesql N'SELECT [events].* FROM [events] WHERE [events].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 7ms (Views: 0.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/notifications.json?playerid=101&_=1348248079527" for 192.168.3.122 at 2012-09-21 12:21:22 -0500
+Processing by NotificationsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348248079527"}
+  [1m[35mNotification Load (2.0ms)[0m  EXEC sp_executesql N'SELECT [notifications].* FROM [notifications] WHERE [notifications].[playerid] = N''101'''
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35mSQL (0.0ms)[0m  COMMIT TRANSACTION
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT @@TRANCOUNT
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (2.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [notifications] SET [bulb] = 0, [updated_at] = ''2012-09-21T17:21:22.531'' WHERE [notifications].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT TRANSACTION
+Completed 200 OK in 26ms (Views: 2.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348248080968" for 192.168.3.122 at 2012-09-21 12:21:23 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348248080968"}
+  [1m[36mOffer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:21:23.972'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:21:23.975'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (48.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:21:24.025'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 61ms (Views: 2.0ms | ActiveRecord: 56.0ms)
+
+
+Started GET "/signin" for 192.168.3.100 at 2012-09-21 12:21:36 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 314ms (Views: 314.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/announcements.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /announcements.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/badger.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /badger.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/events.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /events.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/main.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/news.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /news.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/notifications.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /notifications.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/offers.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /offers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/players.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /players.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/promotions.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /promotions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /sessions.css - 304 Not Modified (60ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/announcements.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /announcements.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/badger.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /badger.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/events.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /events.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /main.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/news.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /news.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /notifications.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/offers.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /offers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/players.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /players.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/promotions.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /promotions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /application.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/bg.jpg" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /bg.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/TechResultsCasinoBanner.png" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /TechResultsCasinoBanner.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/dark.png" for 192.168.3.100 at 2012-09-21 12:21:37 -0500
+Served asset /dark.png - 304 Not Modified (3ms)
+
+
+Started POST "/sessions" for 192.168.3.100 at 2012-09-21 12:21:46 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iw8p54QqScr6fqiYmEith2Pn0Frv6CSjjVPpE/TKH/g=", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[35mPlayer Load (1.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N'101'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N'101'
+Redirected to http://192.168.3.100:3000/player_home
+Completed 302 Found in 74ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/player_home" for 192.168.3.100 at 2012-09-21 12:21:46 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from player_home at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/players_controller.rb:92)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[name] = N''John Doe'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[playerid] = N''101'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'[0m
+  [1m[35mSQL (0.0ms)[0m  IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT @@TRANCOUNT[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid=N''101'')'
+  Rendered players/player_home.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 25.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/announcements.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:46 -0500
+Served asset /announcements.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:46 -0500
+Served asset /badger.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:46 -0500
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:46 -0500
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:46 -0500
+Served asset /news.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /notifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /players.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/promotions.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /promotions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/announcements.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /announcements.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /badger.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /offers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/promotions.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /promotions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bg.jpg" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /bg.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/header.jpg" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /header.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subheader.jpg" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /subheader.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset / - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.4.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.4.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.4.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.4.1) lib/thin/connection.rb:53:in `process'
+  thin (1.4.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run_machine'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run'
+  thin (1.4.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.4.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/Gold.png" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /Gold.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.jpg" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /home.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/offers.jpg" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /offers.jpg - 304 Not Modified (23ms)
+
+
+Started GET "/assets/events.jpg" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /events.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/promo.jpg" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /promo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/news.jpg" for 192.168.3.100 at 2012-09-21 12:21:47 -0500
+Served asset /news.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/offers?playerid=101" for 192.168.3.100 at 2012-09-21 12:21:55 -0500
+Processing by OffersController#index as HTML
+  Parameters: {"playerid"=>"101"}
+  [1m[36mOffer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:21:55.934'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (4.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:21:55.941'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (36.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:21:55.980'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (6.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+  Rendered offers/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 109ms (Views: 51.0ms | ActiveRecord: 49.0ms)
+
+
+Started GET "/assets/announcements.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /announcements.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /badger.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /news.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /notifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /players.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/promotions.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /promotions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/announcements.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /announcements.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /badger.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/promotions.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /promotions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:56 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/offers/new" for 192.168.3.100 at 2012-09-21 12:21:57 -0500
+Processing by OffersController#new as HTML
+  Rendered offers/_form.html.erb (12.0ms)
+  Rendered offers/new.html.erb within layouts/application (144.0ms)
+Completed 200 OK in 167ms (Views: 166.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/announcements.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /announcements.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /badger.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /news.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /notifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /players.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/promotions.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /promotions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/announcements.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /announcements.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /badger.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /main.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/news.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /offers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/promotions.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /promotions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.3.100 at 2012-09-21 12:21:58 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/offers" for 192.168.3.100 at 2012-09-21 12:22:05 -0500
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iw8p54QqScr6fqiYmEith2Pn0Frv6CSjjVPpE/TKH/g=", "offer"=>{"code"=>"2222", "playerid"=>"101", "startdate(1i)"=>"2012", "startdate(2i)"=>"9", "startdate(3i)"=>"21", "startdate(4i)"=>"17", "startdate(5i)"=>"21", "enddate(1i)"=>"2012", "enddate(2i)"=>"9", "enddate(3i)"=>"21", "enddate(4i)"=>"17", "enddate(5i)"=>"21", "description"=>"$10 Free Play", "read"=>"0"}, "commit"=>"Create Offer"}
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36mSQL (283.0ms)[0m  [1mEXEC sp_executesql N'INSERT INTO [offers] ([code], [created_at], [description], [enddate], [playerid], [read], [startdate], [updated_at]) VALUES (@0, @1, @2, @3, @4, @5, @6, @7); SELECT CAST(SCOPE_IDENTITY() AS bigint) AS Ident', N'@0 nvarchar(255), @1 datetime, @2 nvarchar(255), @3 datetime, @4 nvarchar(255), @5 int, @6 datetime, @7 datetime', @0 = N'2222', @1 = '2012-09-21T17:22:05.499', @2 = N'$10 Free Play', @3 = '2012-09-21T17:21:00.000', @4 = N'101', @5 = 0, @6 = '2012-09-21T17:21:00.000', @7 = '2012-09-21T17:22:05.499'[0m  [["code", "2222"], ["created_at", Fri, 21 Sep 2012 17:22:05 UTC +00:00], ["description", "$10 Free Play"], ["enddate", Fri, 21 Sep 2012 17:21:00 UTC +00:00], ["playerid", "101"], ["read", 0], ["startdate", Fri, 21 Sep 2012 17:21:00 UTC +00:00], ["updated_at", Fri, 21 Sep 2012 17:22:05 UTC +00:00]]
+  [1m[35mSQL (0.0ms)[0m  COMMIT TRANSACTION
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35mSQL (1.0ms)[0m  EXEC sp_executesql N'INSERT INTO [notifications] ([bulb], [code], [created_at], [description], [drawingtime], [endate], [notification], [notificationid], [num_of_entries], [playerid], [read], [startdate], [updated_at]) VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12); SELECT CAST(SCOPE_IDENTITY() AS bigint) AS Ident', N'@0 int, @1 nvarchar(255), @2 datetime, @3 nvarchar(255), @4 datetime, @5 datetime, @6 nvarchar(255), @7 int, @8 int, @9 nvarchar(255), @10 int, @11 datetime, @12 datetime', @0 = 1, @1 = N'2222', @2 = '2012-09-21T17:22:05.791', @3 = N'$10 Free Play', @4 = '1900-01-01T00:00:00.000', @5 = '2012-09-21T17:21:00.000', @6 = N'offers', @7 = 4, @8 = -2, @9 = N'101', @10 = 0, @11 = '2012-09-21T17:21:00.000', @12 = '2012-09-21T17:22:05.791'  [["bulb", 1], ["code", "2222"], ["created_at", Fri, 21 Sep 2012 17:22:05 UTC +00:00], ["description", "$10 Free Play"], ["drawingtime", Mon, 01 Jan 1900 00:00:00 UTC +00:00], ["endate", Fri, 21 Sep 2012 17:21:00 UTC +00:00], ["notification", "offers"], ["notificationid", 4], ["num_of_entries", -2], ["playerid", "101"], ["read", 0], ["startdate", Fri, 21 Sep 2012 17:21:00 UTC +00:00], ["updated_at", Fri, 21 Sep 2012 17:22:05 UTC +00:00]]
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''[0m
+Redirected to http://192.168.3.100:3000/offers?playerid=101
+Completed 302 Found in 995ms (ActiveRecord: 294.0ms)
+
+
+Started GET "/offers?playerid=101" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Processing by OffersController#index as HTML
+  Parameters: {"playerid"=>"101"}
+  [1m[35mOffer Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:22:06.552'' WHERE [offers].[id] = 4; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:22:06.556'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:22:06.558'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T17:22:06.561'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+  Rendered offers/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 40ms (Views: 26.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/announcements.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /announcements.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /badger.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /events.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/main.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /news.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /notifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /players.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/promotions.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /promotions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:06 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/announcements.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /announcements.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /badger.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/promotions.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /promotions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.3.100 at 2012-09-21 12:22:07 -0500
+Served asset /application.js - 304 Not Modified (2ms)
