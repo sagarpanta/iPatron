@@ -54,3 +54,944 @@ ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.0ms)
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (166.0ms)
+Connecting to database specified by database.yml
+  [1m[36mSQL (0.0ms)[0m  [1mUSE [mobileCRM][0m
+
+
+Started GET "/signin" for 192.168.3.100 at 2012-09-21 11:28:21 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (187.0ms)
+Compiled jquery.js  (5ms)  (pid 7592)
+Compiled jquery_ujs.js  (0ms)  (pid 7592)
+Compiled application.js  (158ms)  (pid 7592)
+Completed 200 OK in 581ms (Views: 581.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:22 -0500
+Served asset /application.css - 200 OK (15ms)
+
+
+Started GET "/assets/announcements.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:22 -0500
+Served asset /announcements.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/badger.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:22 -0500
+Served asset /badger.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:22 -0500
+Served asset /events.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/main.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:22 -0500
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/news.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /news.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/notifications.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /notifications.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/offers.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /offers.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/players.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /players.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/promotions.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /promotions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /jquery.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/announcements.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /announcements.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/badger.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /badger.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/events.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /events.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/news.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /news.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /notifications.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/offers.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /offers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /players.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/promotions.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /promotions.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /application.js - 200 OK (26ms)
+
+
+Started GET "/assets/bg.jpg" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /bg.jpg - 304 Not Modified (25ms)
+
+
+Started GET "/assets/TechResultsCasinoBanner.png" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /TechResultsCasinoBanner.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/dark.png" for 192.168.3.100 at 2012-09-21 11:28:23 -0500
+Served asset /dark.png - 304 Not Modified (3ms)
+
+
+Started POST "/sessions" for 192.168.3.100 at 2012-09-21 11:28:33 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iw8p54QqScr6fqiYmEith2Pn0Frv6CSjjVPpE/TKH/g=", "session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[35mPlayer Load (31.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N'101'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N'101'
+Redirected to http://192.168.3.100:3000/player_home
+Completed 302 Found in 1300ms (ActiveRecord: 1054.0ms)
+
+
+Started GET "/player_home" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Processing by PlayersController#player_home as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from player_home at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/players_controller.rb:92)
+  [1m[36mSQL (20.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35mPlayer Exists (31.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[name] = N''John Doe'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'
+  [1m[36mPlayer Exists (2.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[playerid] = N''101'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'[0m
+  [1m[35mSQL (0.0ms)[0m  IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT @@TRANCOUNT[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid=N''101'')'
+  Rendered players/player_home.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 383ms (Views: 47.0ms | ActiveRecord: 60.0ms)
+
+
+Started GET "/assets/announcements.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /announcements.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /badger.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /news.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /notifications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /players.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/promotions.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /promotions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/announcements.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /announcements.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/badger.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:35 -0500
+Served asset /badger.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/offers.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/promotions.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /promotions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.jpg" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /bg.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/header.jpg" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /header.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/subheader.jpg" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /subheader.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset / - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.4.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.4.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.4.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.4.1) lib/thin/connection.rb:53:in `process'
+  thin (1.4.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run_machine'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run'
+  thin (1.4.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.4.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/Gold.png" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /Gold.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.jpg" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /home.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/offers.jpg" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /offers.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/events.jpg" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /events.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/promo.jpg" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /promo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/news.jpg" for 192.168.3.100 at 2012-09-21 11:28:36 -0500
+Served asset /news.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/main/index?_=1348245668009" for 192.168.3.122 at 2012-09-21 11:41:19 -0500
+Connecting to database specified by database.yml
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__696444458__call__502943839__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.4.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.4.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.4.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.4.1) lib/thin/connection.rb:53:in `process'
+  thin (1.4.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run_machine'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run'
+  thin (1.4.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.4.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (111.0ms)
+
+
+Started POST "/sessions" for 192.168.3.122 at 2012-09-21 11:42:24 -0500
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__696444458__call__502943839__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.4.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.4.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.4.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.4.1) lib/thin/connection.rb:53:in `process'
+  thin (1.4.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run_machine'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run'
+  thin (1.4.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.4.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started POST "/sessions" for 192.168.3.122 at 2012-09-21 11:42:27 -0500
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__696444458__call__502943839__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.4.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.4.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.4.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.4.1) lib/thin/connection.rb:53:in `process'
+  thin (1.4.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run_machine'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run'
+  thin (1.4.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.4.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.0ms)
+
+
+Started POST "/sessions" for 192.168.3.122 at 2012-09-21 11:43:16 -0500
+Connecting to database specified by database.yml
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__334743584__call__736480573__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.4.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.4.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.4.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.4.1) lib/thin/connection.rb:53:in `process'
+  thin (1.4.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run_machine'
+  eventmachine-1.0.0.beta.3-x86 (mingw32) lib/eventmachine.rb:199:in `run'
+  thin (1.4.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.4.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1353.1ms)
+Connecting to database specified by database.yml
+  [1m[36mSQL (1.0ms)[0m  [1mUSE [mobileCRM][0m
+
+
+Started POST "/sessions" for 192.168.3.122 at 2012-09-21 11:45:28 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "authenticity_token"=>"", "commit"=>"Sign In"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mPlayer Load (1.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N'101'[0m
+  [1m[35mPlayer Load (2.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] IS NULL'
+Redirected to http://192.168.3.100:3000/player_home
+Completed 302 Found in 286ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/player_home" for 192.168.3.122 at 2012-09-21 11:45:31 -0500
+Processing by PlayersController#player_home as */*
+  [1m[36mPlayer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from player_home at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/players_controller.rb:92)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35mPlayer Exists (1.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[name] = N''John Doe'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[playerid] = N''101'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'[0m
+  [1m[35mSQL (1.0ms)[0m  IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT @@TRANCOUNT[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid=N''101'')'
+  Rendered players/player_home.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 484ms (Views: 290.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348245932142" for 192.168.3.122 at 2012-09-21 11:45:35 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348245932142"}
+  [1m[36mOffer Load (2.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (72.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:45:35.147'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:45:35.223'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:45:35.227'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 104ms (Views: 1.0ms | ActiveRecord: 80.0ms)
+
+
+Started GET "/events.json?playerid=101&_=1348245933701" for 192.168.3.122 at 2012-09-21 11:45:36 -0500
+Processing by EventsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348245933701"}
+  [1m[35mEvent Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [events].* FROM [events] WHERE [events].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 10ms (Views: 0.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/promotions.json?playerid=101&_=1348245934514" for 192.168.3.122 at 2012-09-21 11:45:37 -0500
+Processing by PromotionsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348245934514"}
+  [1m[35mPromotion Load (2.0ms)[0m  EXEC sp_executesql N'SELECT [promotions].* FROM [promotions] WHERE [promotions].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 11ms (Views: 0.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/announcements.json?playerid=101&_=1348245935378" for 192.168.3.122 at 2012-09-21 11:45:38 -0500
+Processing by AnnouncementsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348245935378"}
+  [1m[35mAnnouncement Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [announcements].* FROM [announcements] ORDER BY created_at DESC'
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348245936187" for 192.168.3.122 at 2012-09-21 11:45:39 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348245936187"}
+  [1m[36mOffer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:45:39.142'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (1.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:45:39.145'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:45:39.148'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/events.json?playerid=101&_=1348245936982" for 192.168.3.122 at 2012-09-21 11:45:39 -0500
+Processing by EventsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348245936982"}
+  [1m[35mEvent Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [events].* FROM [events] WHERE [events].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/promotions.json?playerid=101&_=1348245937668" for 192.168.3.122 at 2012-09-21 11:45:40 -0500
+Processing by PromotionsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348245937668"}
+  [1m[35mPromotion Load (0.0ms)[0m  EXEC sp_executesql N'SELECT [promotions].* FROM [promotions] WHERE [promotions].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/index?_=1348246018421" for 192.168.3.122 at 2012-09-21 11:47:01 -0500
+Processing by MainController#index as */*
+  Parameters: {"_"=>"1348246018421"}
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 192.168.3.122 at 2012-09-21 11:48:33 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"session"=>{"playerid"=>"101", "password"=>"[FILTERED]"}, "authenticity_token"=>"KFr+0Ya3Blm6beoC1ac4SF9VGP5TGp8hSCoX/4me3Z4=", "commit"=>"Sign In"}
+  [1m[35mPlayer Load (0.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N'101'[0m
+  [1m[35mPlayer Load (1.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] IS NULL'
+Redirected to http://192.168.3.100:3000/player_home
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/player_home" for 192.168.3.122 at 2012-09-21 11:48:33 -0500
+Processing by PlayersController#player_home as */*
+  [1m[36mPlayer Load (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from player_home at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/players_controller.rb:92)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35mPlayer Exists (1.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[name] = N''John Doe'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[playerid] = N''101'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'[0m
+  [1m[35mSQL (1.0ms)[0m  IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT @@TRANCOUNT[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid=N''101'')'
+  Rendered players/player_home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 25.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348246112423" for 192.168.3.122 at 2012-09-21 11:48:35 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246112423"}
+  [1m[36mOffer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:35.398'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:35.402'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (46.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:35.451'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 61ms (Views: 2.0ms | ActiveRecord: 52.0ms)
+
+
+Started GET "/events.json?playerid=101&_=1348246113472" for 192.168.3.122 at 2012-09-21 11:48:36 -0500
+Processing by EventsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246113472"}
+  [1m[35mEvent Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [events].* FROM [events] WHERE [events].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/promotions.json?playerid=101&_=1348246114382" for 192.168.3.122 at 2012-09-21 11:48:37 -0500
+Processing by PromotionsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246114382"}
+  [1m[35mPromotion Load (0.0ms)[0m  EXEC sp_executesql N'SELECT [promotions].* FROM [promotions] WHERE [promotions].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/announcements.json?playerid=101&_=1348246115198" for 192.168.3.122 at 2012-09-21 11:48:38 -0500
+Processing by AnnouncementsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246115198"}
+  [1m[35mAnnouncement Load (0.0ms)[0m  EXEC sp_executesql N'SELECT [announcements].* FROM [announcements] ORDER BY created_at DESC'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348246116018" for 192.168.3.122 at 2012-09-21 11:48:38 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246116018"}
+  [1m[36mOffer Load (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:38.996'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (19.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:39.019'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (10.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:39.031'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (41.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 85ms (Views: 2.0ms | ActiveRecord: 73.0ms)
+
+
+Started GET "/player_home.json?_=1348246116694" for 192.168.3.122 at 2012-09-21 11:48:39 -0500
+Processing by PlayersController#player_home as JSON
+  Parameters: {"_"=>"1348246116694"}
+  [1m[35mPlayer Load (0.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from player_home at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/players_controller.rb:92)
+  [1m[35mSQL (1.0ms)[0m  BEGIN TRANSACTION
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[name] = N''John Doe'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'[0m
+  [1m[35mPlayer Exists (1.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[playerid] = N''101'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'
+  [1m[36mSQL (0.0ms)[0m  [1mIF @@TRANCOUNT > 0 ROLLBACK TRANSACTION[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT @@TRANCOUNT
+Completed 200 OK in 8ms (Views: 0.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348246117448" for 192.168.3.122 at 2012-09-21 11:48:40 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246117448"}
+  [1m[36mOffer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:40.416'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:40.419'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (43.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:40.465'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 78ms (Views: 22.0ms | ActiveRecord: 50.0ms)
+
+
+Started GET "/events.json?playerid=101&_=1348246118269" for 192.168.3.122 at 2012-09-21 11:48:41 -0500
+Processing by EventsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246118269"}
+  [1m[35mEvent Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [events].* FROM [events] WHERE [events].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 3ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/promotions.json?playerid=101&_=1348246119002" for 192.168.3.122 at 2012-09-21 11:48:41 -0500
+Processing by PromotionsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246119002"}
+  [1m[35mPromotion Load (0.0ms)[0m  EXEC sp_executesql N'SELECT [promotions].* FROM [promotions] WHERE [promotions].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/announcements.json?playerid=101&_=1348246119658" for 192.168.3.122 at 2012-09-21 11:48:42 -0500
+Processing by AnnouncementsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246119658"}
+  [1m[35mAnnouncement Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [announcements].* FROM [announcements] ORDER BY created_at DESC'
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348246120376" for 192.168.3.122 at 2012-09-21 11:48:43 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246120376"}
+  [1m[36mOffer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:43.324'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:43.327'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (44.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:43.373'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 57ms (Views: 2.0ms | ActiveRecord: 52.0ms)
+
+
+Started GET "/player_home.json?_=1348246121135" for 192.168.3.122 at 2012-09-21 11:48:44 -0500
+Processing by PlayersController#player_home as JSON
+  Parameters: {"_"=>"1348246121135"}
+  [1m[35mPlayer Load (1.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from player_home at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/players_controller.rb:92)
+  [1m[35mSQL (1.0ms)[0m  BEGIN TRANSACTION
+  [1m[36mPlayer Exists (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[name] = N''John Doe'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'[0m
+  [1m[35mPlayer Exists (2.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[playerid] = N''101'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'
+  [1m[36mSQL (8.0ms)[0m  [1mIF @@TRANCOUNT > 0 ROLLBACK TRANSACTION[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT @@TRANCOUNT
+Completed 200 OK in 27ms (Views: 1.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348246121779" for 192.168.3.122 at 2012-09-21 11:48:44 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246121779"}
+  [1m[36mOffer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:44.763'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:44.766'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (46.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:44.814'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 58ms (Views: 2.0ms | ActiveRecord: 52.0ms)
+
+
+Started GET "/events.json?playerid=101&_=1348246122492" for 192.168.3.122 at 2012-09-21 11:48:45 -0500
+Processing by EventsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246122492"}
+  [1m[35mEvent Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [events].* FROM [events] WHERE [events].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/promotions.json?playerid=101&_=1348246123183" for 192.168.3.122 at 2012-09-21 11:48:46 -0500
+Processing by PromotionsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246123183"}
+  [1m[35mPromotion Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [promotions].* FROM [promotions] WHERE [promotions].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/announcements.json?playerid=101&_=1348246123783" for 192.168.3.122 at 2012-09-21 11:48:46 -0500
+Processing by AnnouncementsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246123783"}
+  [1m[35mAnnouncement Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [announcements].* FROM [announcements] ORDER BY created_at DESC'
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/player_home.json?_=1348246124426" for 192.168.3.122 at 2012-09-21 11:48:47 -0500
+Processing by PlayersController#player_home as JSON
+  Parameters: {"_"=>"1348246124426"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) [players].* FROM [players] WHERE [players].[playerid] = N''101'''[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from player_home at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/players_controller.rb:92)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  EXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[name] = N''John Doe'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'
+  [1m[36mPlayer Exists (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT TOP (1) 1 AS one FROM [players] WHERE ([players].[playerid] = N''101'' COLLATE Latin1_General_CS_AS_WS AND [players].[id] != 1)'[0m
+  [1m[35mSQL (0.0ms)[0m  IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT @@TRANCOUNT[0m
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/announcements.json?playerid=101&_=1348246126322" for 192.168.3.122 at 2012-09-21 11:48:49 -0500
+Processing by AnnouncementsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246126322"}
+  [1m[35mAnnouncement Load (0.0ms)[0m  EXEC sp_executesql N'SELECT [announcements].* FROM [announcements] ORDER BY created_at DESC'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/promotions.json?playerid=101&_=1348246127079" for 192.168.3.122 at 2012-09-21 11:48:50 -0500
+Processing by PromotionsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246127079"}
+  [1m[36mPromotion Load (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT [promotions].* FROM [promotions] WHERE [promotions].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/announcements.json?playerid=101&_=1348246127944" for 192.168.3.122 at 2012-09-21 11:48:50 -0500
+Processing by AnnouncementsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246127944"}
+  [1m[36mAnnouncement Load (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT [announcements].* FROM [announcements] ORDER BY created_at DESC'[0m
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?playerid=101&_=1348246128643" for 192.168.3.122 at 2012-09-21 11:48:51 -0500
+Processing by EventsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246128643"}
+  [1m[35mEvent Load (1.0ms)[0m  EXEC sp_executesql N'SELECT [events].* FROM [events] WHERE [events].[playerid] = N''101'' ORDER BY created_at DESC'
+  [1m[36m (1.0ms)[0m  [1mEXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/announcements.json?playerid=101&_=1348246129366" for 192.168.3.122 at 2012-09-21 11:48:52 -0500
+Processing by AnnouncementsController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246129366"}
+  [1m[35mAnnouncement Load (0.0ms)[0m  EXEC sp_executesql N'SELECT [announcements].* FROM [announcements] ORDER BY created_at DESC'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/offers.json?playerid=101&_=1348246130237" for 192.168.3.122 at 2012-09-21 11:48:53 -0500
+Processing by OffersController#index as JSON
+  Parameters: {"playerid"=>"101", "_"=>"1348246130237"}
+  [1m[36mOffer Load (0.0ms)[0m  [1mEXEC sp_executesql N'SELECT [offers].* FROM [offers] WHERE [offers].[playerid] = N''101'' ORDER BY created_at DESC'[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'SELECT SUM([notifications].[bulb]) AS sum_id FROM [notifications] WHERE (playerid = N''101'')'
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:53.194'' WHERE [offers].[id] = 3; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[35mSQL (0.0ms)[0m  BEGIN TRANSACTION
+  [1m[36m (0.0ms)[0m  [1mEXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:53.197'' WHERE [offers].[id] = 2; SELECT @@ROWCOUNT AS AffectedRows'[0m
+  [1m[35mSQL (45.0ms)[0m  COMMIT TRANSACTION
+DEPRECATION WARNING: You're trying to create an attribute `total_bulbs'. Writing arbitrary attributes on a model is deprecated. Please just use `attr_writer` etc. (called from block in index at C:/Users/spant/Documents/GitHub/iPatron/app/controllers/offers_controller.rb:9)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN TRANSACTION[0m
+  [1m[35m (1.0ms)[0m  EXEC sp_executesql N'UPDATE [offers] SET [updated_at] = ''2012-09-21T16:48:53.245'' WHERE [offers].[id] = 1; SELECT @@ROWCOUNT AS AffectedRows'
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT TRANSACTION[0m
+Completed 200 OK in 59ms (Views: 2.0ms | ActiveRecord: 48.0ms)
