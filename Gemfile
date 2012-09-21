@@ -12,7 +12,7 @@ gem 'rails'
 gem 'mobylette'
 gem 'jquery_mobile_rails'
 
-gem 'pubnub-ruby'
+gem 'pubnub'
 
 gem 'pg'
 
@@ -44,7 +44,7 @@ gem 'jquery-rails'
 
 
 
-gem  'eventmachine' , '1.0.0.beta.3'
+gem  'eventmachine' , '1.0.0.beta.4.1'
 gem 'thin'
 
 
